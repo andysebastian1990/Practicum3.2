@@ -1,0 +1,81 @@
+body{
+  background-image: url("ori3.gif");
+  background-size: 100vw 100vh;
+  background-attachment:fixed;
+  margin: 0;
+   animation: contenedor 3s infinite;
+}
+
+.contenedor {
+display: block;
+margin-right: auto;
+margin-left: auto;
+overflow: hidden;
+position:relative;
+top:90px;
+width: 420px;
+height:350px;
+background:url("yasuni.png");
+background-size:100% 100%;
+ overflow:hidden:
+ color:#fff;
+ font-family: 'verdana';
+
+ }
+
+
+.contenedor h2{
+ color: white;
+ margin: 100px 0px 0px 40px;
+ position:absolute;
+ left:0px;
+ top:30px;
+ transform:translateX(-120%);
+ transition:all .5s ease;
+}
+.contenedor p{
+color: white;
+ margin: 90px 0px 0px 40px;
+ position:absolute;
+ left:0px;
+ top:100px;
+ transform:translateX(120%);
+ transition:all .4s ease;
+}
+
+.contenedor:before{
+position: absolute;
+top:335px;
+left:20px;
+content:"";
+width:0%;
+height:3px;
+background:#fff;
+transition:all .3s ease;
+}
+.contenedor:after{
+ position: absolute;
+ top:10px;
+ right:20px;
+ content:"";
+ width:0%;
+ height:3px;
+ background:#fff;
+  transition:all .3s ease;
+  }
+
+.contenedor:hover:before{
+ width: 90%;
+  }
+.contenedor:hover:after {
+    width: 90%;
+  }
+ .contenedor:hover h2,.contenedor:hover p{
+ transform:translateX(0%);
+ transition:all .3s ease;
+  }
+.contenedor:hover{
+ background-size: 110% 110%;
+ transition:all .5s ease;
+
+}﻿

@@ -1,0 +1,26 @@
+.banner2{
+  width: 600px;
+  height: 450px;
+  border: 3px;
+  border: solid;
+  border-color: yellow blue red yellow;
+  margin: auto
+  aling: center;
+
+  background-size: 100% 100%;
+
+
+  animation: banner2 10s infinite;
+}
+@keyframes banner2 {
+  0%, 30%{
+    background-image: url(img/ecuador35.jpg);
+  }
+  35%, 65%{
+    background-image: url(img/ecuador36.jpg);
+  }
+  70%, 100%{
+    background-image: url(img/ecuador37.jpg);
+  }
+
+}

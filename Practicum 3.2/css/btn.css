@@ -1,0 +1,17 @@
+.boton{
+        font:bold 20px Arial;
+        text-decoration:none;
+        color:#0489B1;
+        border:4px solid #0489B1;
+        padding:5px 20px 5px 20px;
+        border-radius:5px;
+        transition:background 1s,color 1s;
+        -webkit-transition:background 1s,color 1s;
+        -moz-transition:background 1s,color 1s;
+        -o-transition:background 1s,color 1s;
+      }
+
+      .boton:hover{
+        background:#00FFF3;
+        color:#0489B1;
+      }

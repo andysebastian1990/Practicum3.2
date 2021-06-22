@@ -1,0 +1,40 @@
+.flex
+{
+   /* basic styling */
+   width: 900px;
+   height: 450px;
+   border: 1px solid #555;
+   font: 14px Arial;
+
+
+   /* flexbox setup */
+   display: -webkit-flex;
+   -webkit-flex-direction: row;
+
+   display: flex;
+   flex-direction: row;
+
+}
+
+.flex > div
+{
+   -webkit-flex: 1 1 auto;
+   flex: 1 1 auto;
+
+   width: 30px; /* To make the transition work nicely.  (Transitions to/from
+                   "width:auto" are buggy in Gecko and Webkit, at least.
+                   See http://bugzil.la/731886 for more info.) */
+
+   -webkit-transition: width 0.7s ease-out;
+   transition: width 0.7s ease-out;
+}
+
+/* colors */
+.flex > div:nth-child(1){ background:url("img/ecuador22.jpg")}
+.flex > div:nth-child(2){ background:url("img/ecuador23.jpg") }
+.flex > div:nth-child(3){ background :url("img/ecuador24.jpg")}
+
+.flex > div:hover
+{
+     width: 350px;
+}
